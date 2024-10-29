@@ -1,18 +1,20 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMA HTML5 Simple Demo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <body>
-    <script>
-      const iframe = document.createElement("iframe");
-      iframe.id = "frameId";
-      iframe.name = "frameId";
-      iframe.style.display = "none";
-      iframe.sandbox = "";
-      window.document.body.appendChild(iframe);
-    </script>
 
-    <button></button>
+  <body>
+    <div id="mainContainer">
+      <div id="content">
+        <video id="contentElement">
+          <source src="https://storage.googleapis.com/gvabox/media/samples/stock.mp4"></source>
+        </video>
+      </div>
+      <div id="adContainer"></div>
+    </div>
+    <button id="playButton">Play</button>
+    <script type="text/javascript" src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+    <script type="text/javascript" src="ads.js"></script>
   </body>
 </html>
